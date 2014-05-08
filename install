@@ -1,0 +1,16 @@
+#!/bin/sh
+
+INSTALL_DIR="$HOME/.reactionlp"
+
+if [ ! -d "$INSTALL_DIR" ];
+then
+	git clone https://github.com/ongoworks/reaction-launch-prep.git "$INSTALL_DIR"
+else
+	cd "$INSTALL_DIR"
+	git pull
+fi
+
+if [ ! -f /usr/local/bin/reactionlp ];
+then
+	sudo ln -s "$INSTALL_DIR/reactionlp.sh" /usr/local/bin/reactionlp
+fi

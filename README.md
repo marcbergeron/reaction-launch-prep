@@ -10,7 +10,7 @@ will most likely eventually become a NodeJS app or in some way be part of the Re
 To install reactionlp on your workstation (Mac or Linux), run this command in your terminal:
 
 ```bash
-$ sudo -H curl https://raw.github.com/ongoworks/reaction-launch-prep/master/install | sh
+$ sudo -H curl https://raw.githubusercontent.com/ongoworks/reaction-launch-prep/master/install | sh
 ```
 
 If it doesn't work, the commands to do the installation yourself are something like this:
